@@ -1,0 +1,734 @@
+
+html{
+    height: 100%;
+    cursor: url("kreis.png");
+}
+@font-face {
+    font-family: "Riviera Nights";
+    src: url("RivieraNights-Light.woff") format("woff");
+    font-weight: 200;
+    font-style: normal
+}
+@font-face {
+    font-family: "Riviera Nights Ultra";
+    src: url("RivieraNights-Ultralight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal
+}
+
+
+body{
+    font-family: "Riviera Nights", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header {
+    background: rgba(44, 44, 44, 0.562); /* Hintergrund mit Transparenz */
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s ease; /* Animation für den Übergang */
+  }
+.logo {
+    height: 12%;
+    width: 12%;
+    justify-content: center;
+    vertical-align: middle;
+    color: white;
+    font-family: "Riviera Nights", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    letter-spacing: 2px;
+}
+.logo #imglogo {
+    padding-bottom: 10px;
+    width: 40px;
+}
+.logocentre {
+    display: flex; /* Damit die Bildmitte vertikal zentriert wird */
+    justify-content: center;
+    width: 40px; /* Breite des Logos anpassen */
+    height: 50px; /* Automatische Anpassung der Höhe */
+    margin-right:200px; /* Abstand zum Text oder anderen Elementen */
+}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Bei Scrollen die Hintergrundfarbe anpassen */
+  header.sticky {
+    background: rgba(255, 255, 255, 1);
+  }
+.slider{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+   background-image: url("content/grün2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    transition: background-image 1s ease-in-out;
+
+}
+.myButton {
+	background:linear-gradient(to bottom, #969696 5%, #969696 100%);
+    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+	background-color:#969696;
+	border-radius:42px;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+    letter-spacing: 4px;
+	font-weight:bold;
+	padding:12px 100px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #969696 5%, #969696 100%);
+	background-color:#969696;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.myButton2 {
+	background-color:transparent;
+    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+	border-radius:42px;
+	border:2px solid #616161;
+    letter-spacing: 4px;
+	display:inline-block;
+	cursor:pointer;
+	color:#2b2a2a;
+	font-size:17px;
+	padding:12px 100px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton2:hover {
+	background-color:transparent;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+.reveal { 
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+    }
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+
+}
+.highlight-button:hover {
+    padding: 18px 110px;; /* Größe des Buttons beim Überfahren vergrößern */
+}
+
+        
+
+        
+.selectors {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* rechts ausrichten */
+    height: 100%;
+}
+
+
+
+.selectors li {
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    margin: 1em;
+    border-radius: 50%;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.selectors li span {
+    border-radius: 50%;
+    display: inline-block;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    scale: 1.0;
+    transition: all 1s
+}
+
+
+
+.text-block1{
+    display: block;
+    width: 100%;
+    margin-top: 500px;
+    text-align: center;
+}
+.p1 {
+    margin-top: 40px;
+    font-size: 100%;
+    line-height: 2;
+}
+.p2 {
+    padding-top: 50px;
+    font-size: 100%;
+    line-height: 2;
+}
+.text-block1 h2 {
+    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 160%;
+    letter-spacing: 4px;
+}
+.outer-image {
+    margin-top: 500px;
+    background-image: url("content/background.jpg");
+    background-size: cover;
+    max-width: 100%; /* Breite des äußeren Bildes */
+    height: 70%; /* Höhe des äußeren Bildes */
+    position: relative;
+}
+.inner-image {
+    background-image: url("content/Details_Türkis_upscale.jpg");
+    background-size: cover;
+    background-position: center;
+    max-width: 60em; /* Breite des äußeren Bildes */
+    height: 40em; /* Höhe des äußeren Bildes */
+    position: relative;
+      left: 50%; /* Horizontale Ausrichtung auf 50% der äußeren Breite */
+      transform: translate(-50%, -70%); /* Zentrierung des inneren Bildes */
+    
+
+}
+
+
+.text-block2 h2 {
+    margin-bottom: 450px;
+    margin-top: -200px;
+    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 160%;
+    letter-spacing: 4px;
+    text-align: center;
+    display: block;
+}
+.text-block3 h2 {
+    margin-top: 450px;
+    margin-bottom: 150px;
+    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 160%;
+    letter-spacing: 4px;
+    text-align: center;
+    display: block;
+}
+.text-block4 h2 {
+    margin-top: -100px;
+    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 160%;
+    letter-spacing: 4px;
+    text-align: center;
+    display: block;
+}
+.text-block5 h2 {
+    margin-top: 250px;
+    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 160%;
+    letter-spacing: 4px;
+    text-align: center;
+    display: block;
+}
+.text-block5 p {
+    margin-top: 50px;
+    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    line-height: 2;
+    font-size: 100%;
+    text-align: center;
+    display: block;
+}
+.buttons {
+    margin-top: 50px;
+    text-align: center;
+    display: block; 
+}
+footer {
+    margin-top: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.parallax-container {
+    height: 100vh; /* Vollständige Bildschirmhöhe */
+    position: relative;
+    background-image: url("content/BackgroundOnscroll.png");
+    margin-top: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+.parallax-foreground {
+    width: 100%; /* Breite des Bildes im Vordergrund */
+    max-width: 1600px; /* Maximal zulässige Breite des Bildes */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: parallaxAnimation 10s infinite alternate; /* Anpassen der Dauer und Animationseffekte */
+}
+@keyframes parallaxAnimation {
+    from {
+        transform: translate(-50%, -50%) translateY(-50px);
+    }
+    to {
+        transform: translate(-50%, -50%) translateY(50px);
+    }
+}
+
+
+.outer-image2 {
+    margin-top: 450px;
+    background-image: url("content/background2.jpg.png"); 
+    background-size: cover;
+    max-width: 100%; /* Breite des äußeren Bildes */
+    height: 50%; /* Höhe des äußeren Bildes */
+    position: relative;
+}
+.inner-image2 {
+    background-image: url("content/upscale_green@2x.png");
+    background-size: cover;
+    background-position: center;
+    max-width: 60em; /* Breite des äußeren Bildes */
+    height: 40em; /* Höhe des äußeren Bildes */
+    position: relative;
+      left: 50%; /* Horizontale Ausrichtung auf 50% der äußeren Breite */
+      transform: translate(-50%, -70%); 
+}
+
+.pic1 {
+ margin-top: 100px;
+    float: left;
+    max-width: 30%;
+    height: 50%;
+}
+.pic2 {
+    margin-top: 500px;
+    max-width: 30%;
+    height: 50%;
+    float: right;
+}
+.pic3 {
+    max-width: 30%;
+    height: 50%;
+    margin-top: 750px;
+  
+    
+}
+
+/*@keyframes change{
+    0%
+    {
+        background-image: url(content/grün2.jpg);
+    }
+    33%
+    {
+        background-image: url(content/türkis2.jpg);
+    }
+    66%
+    {
+        background-image: url(content/rot2.jpg);
+    }
+    100%
+    {
+        background-image: url(content/grün2.jpg);
+    }
+}*/
+
+.fade-in-element {
+    animation: fade-in 2.5s;
+}
+
+.fade-in-header {
+    animation: fade-in 1.5s;
+}
+
+.fade-in-picture {
+    animation: fade-in-picture 1.5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fade-in-picture {
+    from {
+        opacity: 0;
+        transform: translateY(-30%, -50%) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-50%, -70%) scale(1);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .outer-image {
+    margin-top: 100px;
+    background-image: url("content/background.jpg");
+    background-size: cover;
+    max-width: 100%; /* Breite des äußeren Bildes */
+    height: 30%; /* Höhe des äußeren Bildes */
+    position: relative;
+}
+.inner-image {
+    background-image: url("content/Mobile/mobile_turkis.png");
+    background-size: cover;
+    background-position: center;
+    max-width: 50%; /* Breite des äußeren Bildes */
+    max-height: 25%; /* Höhe des äußeren Bildes */
+    position: relative;
+      left: 50%; /* Horizontale Ausrichtung auf 50% der äußeren Breite */
+      transform: translate(-50%, -70%); /* Zentrierung des inneren Bildes */
+  }
+  .outer-image2 {
+    margin-top: 150px;
+    background-image: url("content/background2.jpg.png"); 
+    background-size: cover;
+    max-width: 100%; /* Breite des äußeren Bildes */
+    height: 30%; /* Höhe des äußeren Bildes */
+    position: relative;
+}
+.inner-image2 {
+    background-image: url("content/Mobile/MobilGrün.jpg.png");
+    background-size: cover;
+    background-position: center;
+    max-width: 50%; /* Breite des äußeren Bildes */
+    height: 25%; /* Höhe des äußeren Bildes */
+    position: relative;
+      left: 50%; /* Horizontale Ausrichtung auf 50% der äußeren Breite */
+      transform: translate(-50%, -70%); /* Zentrierung des inneren Bildes */
+}
+.slider{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("content/Mobile/MobileNEU.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    transition: background-image 1s ease-in-out;
+}
+
+.selectors {
+    display: flex;
+    align-items: flex-end; /* unten ausrichten */
+    justify-content: center; /* horizontal zentrieren */
+    height: 100%;
+}
+.selectors ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row; /* Anordnung von links nach rechts */
+    padding: 0;
+}
+/*@keyframes change2{
+    0%
+    {
+        background-image: url(content/Mobile/MobileNEU.jpg);
+    }
+    33%
+    {
+        background-image: url(content/Mobile/MobileNEU2.jpg);
+    }
+    66%
+    {
+        background-image: url(content/Mobile/MobileNEU1.jpg);
+    }
+    100%
+    {
+        background-image: url(content/Mobile/MobileNEU.jpg);
+    }
+}*/
+.logocentre {
+    display: flex; /* Damit die Bildmitte vertikal zentriert wird */
+    justify-content: center;
+    width: 40px; /* Breite des Logos anpassen */
+    height: 50px; /* Automatische Anpassung der Höhe */
+    margin-left: 120px;
+
+}
+.p1 {
+    margin-top: 40px;
+    font-size: 100%;
+    line-height: 2;
+}
+.p2 {
+    padding-top: 50px;
+    font-size: 100%;
+    line-height: 2;
+}
+.text-block1{
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+.text-block2 h2 {
+    margin-top: 200px;
+    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 160%;
+    letter-spacing: 4px;
+    text-align: center;
+    display: block;
+}
+.header-text {
+    font-size: 20px;
+}
+
+
+.containerbilder {
+    display: flex;
+    flex-direction: column; /* Bilder werden untereinander angeordnet */
+    align-items: center; /* Optional: Bilder horizontal zentrieren */
+}
+.pic1 {
+    
+    float: left;
+    max-width: 50%;
+    height: 50%;
+}
+.pic2 {
+    margin-top: 100px;
+    max-width: 50%;
+    height: 50%;
+    float: right;
+}
+.pic3 {
+    max-width: 50%;
+    height: 50%;
+    margin-top: 100px;
+  
+    
+}
+.text-block3 h2 {
+    margin-top: 250px;
+    margin-bottom: 250px;
+    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 160%;
+    letter-spacing: 4px;
+    text-align: center;
+    display: block;
+}
+
+
+}
+
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .logocentre {
+        display: flex; /* Damit die Bildmitte vertikal zentriert wird */
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 40px; /* Breite des Logos anpassen */
+        height: 50px; /* Automatische Anpassung der Höhe */
+        margin-left: 120px;
+    
+    }
+    .selectors {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center
+    }
+    
+    
+    
+    .selectors li {
+        cursor: pointer;
+        width: 22px;
+        height: 22px;
+        margin: 1em;
+        border-radius: 50%;
+        padding: 4px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;	
+    }
+    .selectors li span {
+        border-radius: 50%;
+        display: inline-block;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        flex-direction: row;
+        scale: 1.0;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;	
+    }
+ 
+    .outer-image {
+        margin-top: 500px;
+        background-image: url("content/background.jpg");
+        background-size: cover;
+        max-width: 100%; /* Breite des äußeren Bildes */
+        height: 70%; /* Höhe des äußeren Bildes */
+        position: relative;
+    }
+    .inner-image {
+        background-image: url("content/Mobile/mobile_turkis.png");
+        background-size: cover;
+        width: 30em; /* Breite des äußeren Bildes */
+        height: 30em; /* Höhe des äußeren Bildes */
+        position: relative;
+          left: 50%; /* Horizontale Ausrichtung auf 50% der äußeren Breite */
+          transform: translate(-50%, -70%); /* Zentrierung des inneren Bildes */
+      }
+      .outer-image2 {
+        margin-top: 150px;
+        background-image: url("content/background2.jpg.png"); 
+        background-size: cover;
+        max-width: 100%; /* Breite des äußeren Bildes */
+        height: 50%; /* Höhe des äußeren Bildes */
+        position: relative;
+    }
+    .inner-image2 {
+        background-image: url("content/Mobile/MobilGrün.jpg.png");
+        background-size: cover;
+        max-width: 30em; /* Breite des äußeren Bildes */
+        height: 30em; /* Höhe des äußeren Bildes */
+        position: relative;
+          left: 50%; /* Horizontale Ausrichtung auf 50% der äußeren Breite */
+          transform: translate(-50%, -70%); /* Zentrierung des inneren Bildes */
+    }
+
+    .containerbilder {
+        display: flex;
+        flex-direction: column; /* Bilder werden untereinander angeordnet */
+        align-items: center; /* Optional: Bilder horizontal zentrieren */
+    }
+
+
+    .pic1 {
+        margin-top: 250px;
+        float: left;
+        max-width: 50%;
+        height: 50%;
+    }
+    .pic2 {
+        margin-top: 100px;
+        max-width: 50%;
+        height: 50%;
+        float: right;
+    }
+    .pic3 {
+        max-width: 50%;
+        height: 50%;
+        margin-top: 100px;
+      
+        
+    }
+    .text-block4 h2{
+        margin-bottom: -250;
+        font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+        font-weight: 600;
+        font-size: 160%;
+        letter-spacing: 4px;
+        text-align: center;
+        display: block;
+    }
+    .text-block2 h2 {
+        margin-bottom: 250px;
+        margin-top: -200px;
+        font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+        font-weight: 600;
+        font-size: 160%;
+        letter-spacing: 4px;
+        text-align: center;
+        display: block;
+    }
+    .text-block3 h2 {
+        margin-top: 250px;
+        margin-bottom: 250px;
+        font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+        font-weight: 600;
+        font-size: 160%;
+        letter-spacing: 4px;
+        text-align: center;
+        display: block;
+    }
+ 
+  }
