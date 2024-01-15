@@ -17,6 +17,7 @@ html{
 }
 
 
+
 body{
     font-family: "Riviera Nights", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
     height: 100%;
@@ -91,7 +92,7 @@ header {
     height: 100%;
     overflow: hidden;
     position: relative;
-   background-image: url("content/grün2.jpg");
+   background-image: url("content/Grün_Home_Format_richtig.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,6 +100,7 @@ header {
     transition: background-image 1s ease-in-out;
 
 }
+
 .myButton {
 	background:linear-gradient(to bottom, #969696 5%, #969696 100%);
     font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
@@ -125,7 +127,7 @@ header {
 }
 .myButton2 {
 	background-color:transparent;
-    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    font-family: "Riviera Nights", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
 	border-radius:42px;
 	border:2px solid #616161;
     letter-spacing: 4px;
@@ -202,11 +204,13 @@ header {
     text-align: center;
 }
 .p1 {
+    font-family: "Riviera Nights", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
     margin-top: 40px;
     font-size: 100%;
     line-height: 2;
 }
 .p2 {
+    font-family: "Riviera Nights", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
     padding-top: 50px;
     font-size: 100%;
     line-height: 2;
@@ -241,7 +245,7 @@ header {
 
 .text-block2 h2 {
     margin-bottom: 450px;
-    margin-top: -200px;
+    margin-top: -100px;
     font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
     font-weight: 600;
     font-size: 160%;
@@ -269,7 +273,7 @@ header {
     display: block;
 }
 .text-block5 h2 {
-    margin-top: 250px;
+    margin-top: 450px;
     font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
     font-weight: 600;
     font-size: 160%;
@@ -279,7 +283,7 @@ header {
 }
 .text-block5 p {
     margin-top: 50px;
-    font-family: "Riviera Nights Ultra", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
+    font-family: "Riviera Nights", "Gill Alt One MT", "Noto Sans JP", Helvetica, Arial, -apple-system, sans-serif;
     line-height: 2;
     font-size: 100%;
     text-align: center;
@@ -372,6 +376,7 @@ footer {
     max-width: 30%;
     height: 50%;
     margin-top: 750px;
+
   
     
 }
