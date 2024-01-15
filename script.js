@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "content/Mobile/MobileNEU1.jpg"
        ];
   } else {
-   images = ["content/grün2.jpg",
-   "content/türkis2.jpg",
-   "content/rot2.jpg"
+   images = ["content/grüntry.jpg",
+   "content/blautry.jpg",
+   "content/rottry.jpg"
    ];
   }
 
@@ -36,7 +36,7 @@ function background1 () {
   if (screenWidth2 <= 768) {
       document.getElementById("slider").style.backgroundImage = "url(content/Mobile/MobileNEU.jpg)"   
   } else {
-   document.getElementById("slider").style.backgroundImage = "url(content/grün2.jpg)"   
+   document.getElementById("slider").style.backgroundImage = "url(content/grüntry.jpg)"   
   }
 
 
@@ -48,7 +48,7 @@ function background2 () {
 if (screenWidth2 <= 768) {
 document.getElementById("slider").style.backgroundImage = "url(content/Mobile/MobileNEU2.jpg)"   
 } else {
-document.getElementById("slider").style.backgroundImage = "url(content/türkis2.jpg)"   
+document.getElementById("slider").style.backgroundImage = "url(content/blautry.jpg)"   
 }
 }
 
@@ -58,7 +58,7 @@ function background3 () {
 if (screenWidth2 <= 768) {
 document.getElementById("slider").style.backgroundImage = "url(content/Mobile/MobileNEU1.jpg)"   
 } else {
-document.getElementById("slider").style.backgroundImage = "url(content/rot2.jpg)"   
+document.getElementById("slider").style.backgroundImage = "url(content/rottry.jpg)"   
 }
 }
 window.addEventListener("scroll", reveal);
